@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{cb5910a6-4a5d-8972-2f9c-a67bfdbd8c78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobiiSDK", "TobiiSDK.csproj", "{31502617-3cff-f1cd-1b37-39c7086db4a8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobiiXRG2OM", "TobiiXRG2OM.csproj", "{944d7740-e6ef-4025-6e6d-588d8d5cf28f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobiiSDK.Editor", "TobiiSDK.Editor.csproj", "{d77952eb-0619-65a7-bcc9-2479c0ca5756}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{cb5910a6-4a5d-8972-2f9c-a67bfdbd8c78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{cb5910a6-4a5d-8972-2f9c-a67bfdbd8c78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31502617-3cff-f1cd-1b37-39c7086db4a8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31502617-3cff-f1cd-1b37-39c7086db4a8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944d7740-e6ef-4025-6e6d-588d8d5cf28f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944d7740-e6ef-4025-6e6d-588d8d5cf28f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d77952eb-0619-65a7-bcc9-2479c0ca5756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d77952eb-0619-65a7-bcc9-2479c0ca5756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
