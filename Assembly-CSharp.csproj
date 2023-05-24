@@ -54,6 +54,7 @@
      <Compile Include="Assets\Samples\ActionGame\Scripts\WeaponController.cs" />
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\Components\VignetteComponent.cs" />
      <Compile Include="Assets\Samples\SimpleGazeSelection\Scripts\ChangeColor.cs" />
+     <Compile Include="Assets\my_cb.cs" />
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
      <Compile Include="Assets\Samples\Social\Scripts\OneEuroFilter\OneEuroFilter.cs" />
      <Compile Include="Assets\Samples\ActionGame\Scripts\InteractAtGazeWithCrosshairOverride.cs" />
@@ -93,6 +94,7 @@
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\PostProcessingComponent.cs" />
      <Compile Include="Assets\Samples\ActionGame\Scripts\ExtendedViewFirstPerson.cs" />
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+     <Compile Include="Assets\MyScenes\VM.cs" />
      <Compile Include="Assets\Samples\MapNavigation\Scripts\MapNavigation.cs" />
      <Compile Include="Assets\Samples\ActionGame\Scripts\ExtendedViewBase.cs" />
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\Components\FxaaComponent.cs" />
@@ -110,10 +112,12 @@
      <Compile Include="Assets\Samples\ActionGame\Scripts\CleanUI.cs" />
      <Compile Include="Assets\Samples\ActionGame\Scripts\CleanUIOpacityOverrideForCanvas.cs" />
      <Compile Include="Assets\MyScenes\menu.cs" />
+     <Compile Include="Assets\random_speed.cs" />
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\NotEyeTrackingReleated\SimpleMoveController.cs" />
      <Compile Include="Assets\Samples\Social\Scripts\TobiiAvatarEyelidsAndEyebrows.cs" />
      <Compile Include="Assets\Samples\ActionGame\Scripts\NotEyeTrackingReleated\InputManager.cs" />
      <Compile Include="Assets\Samples\ActionGame\Scripts\NotEyeTrackingReleated\FollowTransform.cs" />
+     <Compile Include="Assets\GazePointCollision.cs" />
      <Compile Include="Assets\Samples\GazePointData\Scripts\CloudPointVisualizer.cs" />
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\PostProcessingModel.cs" />
@@ -132,8 +136,7 @@
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
      <Compile Include="Assets\Samples\Social\Scripts\HeadMovement.cs" />
      <Compile Include="Assets\Samples\DynamicLightAdaptation\Scripts\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
-     <Compile Include="Assets\MyScenes\VM.cs" />
-     <Compile Include="Assets\GazePointCollision.cs" />
+     <Compile Include="Assets\ComeOn.cs" />
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\Blit.shader" />
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\LutGen.shader" />
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\ACES.cginc" />
@@ -147,6 +150,7 @@
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\Bloom.cginc" />
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\MyScenes\NewImageEffectShader.shader" />
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\Samples\DynamicLightAdaptation\Shaders\PostProcessing\Resources\Shaders\TAA.cginc" />
@@ -756,6 +760,9 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:\LIBRARY\current\VIIS\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:\LIBRARY\current\VIIS\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\LIBRARY\current\VIIS\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -767,9 +774,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:\LIBRARY\current\VIIS\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:\LIBRARY\current\VIIS\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

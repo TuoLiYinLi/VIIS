@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +8,8 @@ using Tobii.Gaming;
 
 public class VM : MonoBehaviour
 {
+    public AudioSource audioSource;
+
     const float TEMP_RESET_CD = 0.6f;
     const float TEMP_CONFIRM_GAP = 0.45f;
     const int DEGREE_MAX = 30;
@@ -106,6 +109,7 @@ public class VM : MonoBehaviour
             gaze_process = 0;
             on_gaze_exit(last_tar);
             on_gaze_enter(current_tar);
+            play_sound();
         }
 
         if(current_tar!=null && last_tar == current_tar){
@@ -237,6 +241,7 @@ public class VM : MonoBehaviour
                     if(degree>DEGREE_MIN){
                         gaze_process = 0;
                         degree -= 1;
+                        play_sound();
                     }else{
                         gaze_process = TEMP_CONFIRM_GAP;
                     }
@@ -248,6 +253,7 @@ public class VM : MonoBehaviour
                     if(degree < DEGREE_MAX){
                         gaze_process = 0;
                         degree += 1;
+                        play_sound();
                     }else{
                         gaze_process = TEMP_CONFIRM_GAP;
                     }
@@ -323,5 +329,9 @@ public class VM : MonoBehaviour
 
     float twitching_angle(float t){
         return 5*Mathf.Sin(60*t*t);
+    }
+
+    void play_sound(){
+        audioSource.Play();
     }
 }

@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ComeOn
+    - Tobii.Gaming.Examples.Calibration.CalibrationHelper
     - Tobii.Gaming.Examples.GazePointData.GazePlotter
     - Tobii.Gaming.Examples.GazePointData.PrintGazePosition
     - Tobii.Gaming.Examples.GazePointData.SetBackground
@@ -8,6 +10,7 @@ ScriptsOnlyBuild:
     - Tobii.Gaming.Examples.GazePointData.ToggleCodeExample
     - UnityEngine.PostProcessing.PostProcessingProfile
     - VM
+    - random_speed
     TobiiSDK.dll:
     - Tobii.Gaming.Internal.TobiiEulaFile
     Unity.Rider.Editor.dll:
@@ -45,6 +48,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -52,37 +59,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1492}
-    - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 1606}
+      Script: {instanceID: 1496}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 1832}
+      Script: {instanceID: 1640}
     - Class: 114
-      Script: {instanceID: 2402}
+      Script: {instanceID: 1834}
     - Class: 114
-      Script: {instanceID: 2526}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2530}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 2690}
     - Class: 114
-      Script: {instanceID: 2928}
+      Script: {instanceID: 2730}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 2738}
     - Class: 114
-      Script: {instanceID: 3244}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 3516}
+      Script: {instanceID: 2980}
     - Class: 114
-      Script: {instanceID: 3708}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3304}
     - Class: 114
-      Script: {instanceID: 4682}
+      Script: {instanceID: 3522}
+    - Class: 114
+      Script: {instanceID: 3714}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4158}
+    - Class: 114
+      Script: {instanceID: 4690}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -270,6 +283,12 @@ ScriptsOnlyBuild:
     className: ChangeColor
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: my_cb
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -346,6 +365,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Tobii.Gaming.Examples.MapNavigation
     className: MouseNavigation
+  - hash:
+      serializedVersion: 2
+      Hash: a66a7be0de55be09c172e2c90cae23fb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ComeOn
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -594,7 +619,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: 79c961c5bc3027b28de19e62135c4e3e
+      Hash: 3cadd85fc7888d13259ea7d11cfff7a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VM
@@ -742,6 +767,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: menu
+  - hash:
+      serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: random_speed
   - hash:
       serializedVersion: 2
       Hash: adddb47ade05b1e9dc83fc61db54b5f4
